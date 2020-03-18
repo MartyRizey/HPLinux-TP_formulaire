@@ -1,0 +1,3 @@
+# Exclure des 'add' de Git, le fichier ci-dessous. C'est à dire que le fichier ne sera pas ajouté aux fichiers à commiter dans git.
+inc/configBdd_inc.php
+public/other/TP_formulaire.sql
