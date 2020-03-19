@@ -1,5 +1,6 @@
 <?php
-    // PATHROOT = /var/www/html
+    // Sous Linux                              : ROOTPATH = /var/www/html
+    // Sous Windows avec environnement Laragon : ROOTPATH = d:/Logiciels/laragon/www
     define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '/Linux/code/TP_formulaire');
     define('CTRLPATH', ROOTPATH . '/Controllers');
     define('INCPATH', ROOTPATH . '/inc');

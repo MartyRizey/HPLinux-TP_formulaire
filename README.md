@@ -1,6 +1,5 @@
 # Projet : _`TP_formulaire`_
-## Repos GitHub : _HPLinux-TP_formulaire_
-
+## Repos GitHub : _HPLinux-TP_formulaire_ - `branche master`
 
 - Codé sous Linux, dans un environnement classique PHP, Apache, MySQL, phpMyAdmin.
 
@@ -8,8 +7,14 @@
 
 ### INSTALLATION :
 
-- Dossier Projet **`/TP_formulaire`** .
-- Projet à installer ou à cloner dans le dossier **`/var/www/html`** .
+**Sous Linux**
+
+- Dossier Projet **`/HPLinux-TP_formulaire`** à cloner.
+- Projet à installer ou à cloner dans le dossier **`/var/www/html`** . 
+ 
+Pour lancer votre site modifier le chemin Dans le fichier `inc/pathDefine_inc.php` à la constante suivante après la super globale `$_SERVER['DOCUMENT_ROOT']`, en fonction du fichier ou vous clonez le repos.
+
+>define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '**/Linux/code/TP_formulaire**');
 
 ---
 
