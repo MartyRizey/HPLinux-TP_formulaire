@@ -5,10 +5,13 @@
     define('CTRLPATH', ROOTPATH . '/Controllers');
     define('INCPATH', ROOTPATH . '/inc');
     define('MDLSPATH', ROOTPATH . '/modeles');
+    define('VWSPATH', ROOTPATH . '/views');
+    define('TPLPATH', ROOTPATH . '/views/templates');
+    define('BDDCONFIGPATH', ROOTPATH . '/inc/inc_configBdd.php');
+
     define('PUBLICPATH', ROOTPATH . '/public');
     define('CSSPATH', PUBLICPATH . '/css');
     define('IMGSPATH', PUBLICPATH . '/imgs');
     define('JSPATH', PUBLICPATH . '/js');
     define('OTHERPATH', PUBLICPATH . '/other');
-    define('VWSPATH', ROOTPATH . '/views');
-    define('TPLPATH', ROOTPATH . '/views/templates');
+    
