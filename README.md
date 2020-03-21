@@ -9,12 +9,16 @@
 
 **Sous Linux**
 
-- Dossier Projet **`/HPLinux-TP_formulaire`** à cloner.
+- Dossier Projet **`/HPLinux-TP_formulaire`**.
 - Projet à installer ou à cloner dans le dossier **`/var/www/html`** . 
  
-Pour lancer votre site modifier le chemin Dans le fichier `inc/pathDefine_inc.php` à la constante suivante après la super globale `$_SERVER['DOCUMENT_ROOT']`, en fonction du fichier ou vous clonez le repos.
+**1°/** Pour lancer votre site modifier le chemin Dans le fichier `inc/pathDefine_inc.php` à la constante suivante après la super globale `$_SERVER['DOCUMENT_ROOT']`, en fonction du dossier ou vous clonez le repos.
 
->define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '**/Linux/code/TP_formulaire**');
+>define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '**/chemin accession/au dossier/**');
+
+**2°/** Ouvrir votre navigateur.
+
+**3°/** Taper dans l'URL de votre navigateur `localhost`et accéder à votre site.
 
 ---
 
