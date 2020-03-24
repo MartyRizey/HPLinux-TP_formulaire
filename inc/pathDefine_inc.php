@@ -1,6 +1,10 @@
 <?php
-    // PATHROOT = /var/www/html
-    define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '/Linux/code/TP_formulaire');
+    // Sous Linux : ROOTPATH = /var/www/html
+    // define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '/Linux/code/TP_formulaire');
+
+    // Sous Windows avec environnement Laragon : ROOTPATH = D:/logiciels/laragon/www    
+    define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '/tutoriels/HPLinux-TP_formulaire');
+
     define('CTRLPATH', ROOTPATH . '/Controllers');
     define('INCPATH', ROOTPATH . '/inc');
     define('MDLSPATH', ROOTPATH . '/modeles');

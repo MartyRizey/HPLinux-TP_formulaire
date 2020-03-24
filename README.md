@@ -1,4 +1,5 @@
 # Projet : _`TP_formulaire`_
+
 ## Repos GitHub : _HPLinux-TP_formulaire_
 
 
@@ -8,8 +9,15 @@
 
 ### INSTALLATION :
 
+**Sous Linux**
+
 - Dossier Projet **`/TP_formulaire`** .
 - Projet à installer ou à cloner dans le dossier **`/var/www/html`** .
+
+**Sous Windows avec un environnement Laragon**
+
+- Dossier Projet **`/HPLinux-TP_formulaire`** .
+- Projet à installer ou à cloner dans le dossier **`d:/Logiciels/laragon/www`** .
 
 ---
 
