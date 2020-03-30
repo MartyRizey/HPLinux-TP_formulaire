@@ -1,3 +1,6 @@
 <?php
 
-    echo 'Bonjour ma page d\'accueil';
+   echo 'Bonjour ma page d\'accueil';
+
+
+   

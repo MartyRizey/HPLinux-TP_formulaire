@@ -1,4 +1,7 @@
 <?php
+
+    session_start();
+    
     // localhost
     // echo '<pre>'; print_r($_SERVER['SERVER_NAME']); echo '</pre>';
 
@@ -19,9 +22,5 @@
 
     // require './inc/pathDefine_inc.php';
     require_once __DIR__ .'/../inc/pathDefine_inc.php';
-
-
-
-
 
     require_once VWSPATH . '/vws_home.php';
