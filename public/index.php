@@ -8,5 +8,20 @@
     // /var/www/html/Linux/code/TP_formulaire/public
     // echo __DIR__; echo '<br><br>';
 
-    require __DIR__ .'/../inc/pathDefine_inc.php';
-    require VWSPATH . '/vws_home.php';
+    /**
+     * https://www.php.net/manual/fr/function.ini-set.php
+     * https://www.php.net/manual/fr/errorfunc.configuration.php#ini.display-errors
+     */
+    ini_set('display_errors', true);
+
+    // https://www.php.net/manual/fr/function.error-reporting.php 
+    error_reporting(E_ALL);
+
+    // require './inc/pathDefine_inc.php';
+    require_once __DIR__ .'/../inc/pathDefine_inc.php';
+
+
+
+
+
+    require_once VWSPATH . '/vws_home.php';

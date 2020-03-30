@@ -17,7 +17,7 @@
 **Sous Windows avec un environnement Laragon**
 
 - Dossier Projet **`/HPLinux-TP_formulaire`** .
-- Projet à installer ou à cloner dans le dossier **`d:/Logiciels/laragon/www`** .
+- Projet à installer ou à cloner dans le dossier **`d:/...../laragon/www`** eventuellement.
 
 ---
 
@@ -36,8 +36,8 @@
 
 - 2.Créer une fichier pour la config de la Bdd :
 
-   - nom du fichier => `inc_configBdd.php`, le créer dans le dossier **inc**.
+   - nom du fichier => ` ... `, le créer dans le dossier **inc**.
    - Vous pouvez créer votre propre fichier mais dans ce cas il faudra changer les chemin des `require` dans les différents fichiers.
-   - En plus de votre `$dsn` qui contient le driver, l'endroit ou se trouve votre server, le nom de la Bdd et l'encodage,
-     du `$user` qui contient l'utilisateur, et du `$password` qui contient le mot de passe de la Bdd,
-     dans la config de connexion j'ai aussi ajouté => `$options = [PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING];`
+   En plus de votre `$dsn` qui contient le driver, l'endroit ou se trouve votre server, le nom de la Bdd et l'encodage,
+   du `$user` qui contient l'utilisateur, et du `$password` qui contient le mot de passe de la Bdd,
+   dans la config de connexion j'ai aussi ajouté => `$options = [PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING];`
