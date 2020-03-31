@@ -23,4 +23,4 @@
     // require './inc/pathDefine_inc.php';
     require_once __DIR__ .'/../inc/pathDefine_inc.php';
 
-    require_once VWSPATH . '/vws_home.php';
+    require_once VWSPATH . '/home_vws.php';
