@@ -19,7 +19,7 @@
 
   <div class="navBar_links">
     <ul>
-      <li><a href=<?= ROOTPATH . 'public/index.php'; ?>>Home</a></li>
+      <li><a href=<?= ROOTPATH . '/public/index.php'; ?>>Home</a></li>
       <li><a href="#">Link_2</a></li>
     </ul>
   </div>
