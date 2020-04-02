@@ -1,10 +1,9 @@
 <?php
 
-    print_r(__DIR__);
+    // print_r(__DIR__);
     
     require_once VWSPATH . '/templates/doctype_tpl.php';
     // require_once __DIR__ . '/templates/tpl_doctype.php';
-
     require_once VWSPATH . '/templates/header_tpl.php';
 
 ?>

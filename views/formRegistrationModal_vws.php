@@ -17,7 +17,7 @@
       <!-- Modal body -->
       <div class="modal-body">
       <!-- Je transmet les données saisies dans le fichier Ctrl_insertDatasRegistration.php -->
-        <form action=<?= ROOTPATH . "/Controllers/InsertDatasRegistration_Ctrl.php"; ?> method="POST">
+        <form action="../Controllers/InsertDatasRegistration_Ctrl.php" method="POST">
 
           <div class="input_form input_form-reg_bkgd">
 

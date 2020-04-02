@@ -1,11 +1,12 @@
 <?php
 
+require_once '../inc/pathDefine_inc.php';
 // je requiers la connexion à ma Bdd qui est dans le fichier connex_bdd.php, ici.
 require_once ROOTPATH . '/inc/connexBdd_inc.php';
 // je requiers la requête de selection qui est dans le fichier sqlSelectDatasReg.php, ici.
-require_once ROOTPATH . '/modeles/sqlSelectDatasReg_mod.php';
+require_once ROOTPATH . '/modeles/selectDatasReg_mod.php';
 // je requiers la requête d'insertion des données en Bdd qui est dans le fichier sqlInsertDatasReg.php, ici.
-require_once ROOTPATH . '/modeles/sqlInsertDatasReg_mod.php';
+require_once ROOTPATH . '/modeles/insertDatasReg_mod.php';
 
 /*
   - Je récupére les données du formulaire d'inscription pour les traiter et les stocks dans des variables => 
