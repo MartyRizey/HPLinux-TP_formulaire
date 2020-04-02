@@ -12,12 +12,20 @@
 **Sous Linux**
 
 - Dossier Projet **`/TP_formulaire`** .
+- Utiliser la branche  **`master`** de Github.
 - Projet à installer ou à cloner dans le dossier **`/var/www/html`** .
 
 **Sous Windows avec un environnement Laragon**
 
-- Dossier Projet **`/HPLinux-TP_formulaire`** .
-- Projet à installer ou à cloner dans le dossier **`d:/...../laragon/www`** eventuellement.
+- Dossier Projet **`/HPLinux-TP_formulaire`** sur Github.
+- Utiliser la branche  **`ASUSWds-TP_formulaire`** de Github.
+- Projet à installer ou à cloner dans le dossier `www` de l'installation de `Laragon`, ex : **`DD:/...../laragon/www`** eventuellement.
+   Vous pourrez ensuite y accèder en tapant `localhost` dans l'URL du navigateur. Vous aurez probablement un problème de chemin. Il faudra modifier quelque chose dans un fichier.
+- dans le fichier `pathDefine_inc.php` du dossier `inc` modifier selon l'emplacement du `git clone` le chemin suivant : **`/tutoriels/HPLinux-TP_formulaire`**
+
+```php
+   define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '/tutoriels/HPLinux-TP_formulaire');
+```
 
 ---
 
