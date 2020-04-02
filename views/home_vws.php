@@ -5,6 +5,8 @@
     require_once VWSPATH . '/templates/doctype_tpl.php';
     // require_once __DIR__ . '/templates/tpl_doctype.php';
 
+    require_once VWSPATH . '/templates/header_tpl.php';
+
 ?>
 
     <section id="home_page">
