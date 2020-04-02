@@ -1,6 +1,6 @@
 <?php
   
-  require_once ROOTPATH . '/inc/inc_configBdd.php';
+  require_once ROOTPATH . '/inc/configBdd_inc.php';
 
   // Connexion => https://www.php.net/manual/fr/pdo.construct.php
   // PDO::__construct — Crée une instance PDO qui représente une connexion à la base
