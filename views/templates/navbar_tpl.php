@@ -10,7 +10,7 @@
    
   // require_once ROOTPATH . '/inc/pathDefine_inc.php';
   // require_once __DIR__ . '/formConnexModal_vws.php';
-  // require_once __DIR__ . '/formRegistrationModal_vws.php';
+  require_once ROOTPATH . '/views/formRegistrationModal_vws.php';
   require_once ROOTPATH . '/inc/logOutUserConnex_inc.php'; 
      
 ?>

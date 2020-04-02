@@ -132,3 +132,40 @@ footer {
   text-shadow: 1px 1px 2px silver;
 }
 
+/* -------- Modal Formulaire -------- */
+.modal-body > form > .input_form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.modal-header > .modal-title-connex,
+.modal-body > form > .input_form > .label_items_connex {
+  color: #0069D9;
+}
+
+.modal-header > .modal-title-inscript,
+.modal-body > form > .input_form > .label_items_inscript {
+  color: #138496;
+}
+
+.modal-body > form > .input_form > label:nth-child(1) {
+  margin-top: 15px;
+}
+
+.modal-body > form > .input_form-connex_bkgd > input:focus {
+  background-color: rgba(112, 157, 240, 0.5);
+}
+
+.modal-body > form > .input_form-reg_bkgd > input:focus {
+  background-color: rgba(23, 155, 175, 0.5);
+}
+
+.modal-body > form > .input_form > input {
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
