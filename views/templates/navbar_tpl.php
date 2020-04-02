@@ -4,14 +4,15 @@
   //     -> vers la page home + un autre. 
   //     -> puis vers un formulaire de connexion et un formulaire d'inscription
   // Un bouton de deconnexion devra apparaître quand on est connecté.
-  // Faire ensuite le CSS de la navbar.
+  // [x] Faire ensuite le CSS de la navbar.
 
   // Dans un second temps créer les vues des formulaires et d'une page d'erreur type 404.
    
+  // require_once ROOTPATH . '/inc/pathDefine_inc.php';
   // require_once __DIR__ . '/formConnexModal_vws.php';
   // require_once __DIR__ . '/formRegistrationModal_vws.php';
-  // require_once __DIR__ . '/../inc/logOutUserConnex_inc.php'; 
-  require_once __DIR__ . '/../../inc/pathDefine_inc.php';   
+  require_once ROOTPATH . '/inc/logOutUserConnex_inc.php'; 
+     
 ?>
 
 <nav id="navBar">
