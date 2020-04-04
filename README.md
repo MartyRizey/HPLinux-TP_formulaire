@@ -2,18 +2,16 @@
 
 ## Repos GitHub : _HPLinux-TP_formulaire_
 
-
-- Codé sous Linux, dans un environnement classique PHP, Apache, MySQL, phpMyAdmin.
-
 ---
 
 ### INSTALLATION :
 
 **Sous Linux**
+Dans un environnement classique PHP, Apache, MySQL, phpMyAdmin.
 
-- Dossier Projet **`/TP_formulaire`** .
-- Utiliser la branche  **`master`** de Github.
-- Projet à installer ou à cloner dans le dossier **`/var/www/html`** .
+   - Dossier Projet **`/TP_formulaire`** .
+   - Utiliser la branche  **`master`** de Github.
+   - Projet à installer ou à cloner dans le dossier **`/var/www/html`** .
 
 **Sous Windows avec un environnement Laragon**
 
@@ -41,11 +39,31 @@
    |  email   | varchar(100) |  utf8mb4_general_ci  | non NULL  **&** UNIQUE                  |
    | birthday |    date      |                      | non NULL                                |
 
+---
+
+### Accéder à votre Base de données
 
 - 2.Créer une fichier pour la config de la Bdd :
 
-   - nom du fichier => ` ... `, le créer dans le dossier **inc**.
-   - Vous pouvez créer votre propre fichier mais dans ce cas il faudra changer les chemin des `require` dans les différents fichiers.
-   En plus de votre `$dsn` qui contient le driver, l'endroit ou se trouve votre server, le nom de la Bdd et l'encodage,
-   du `$user` qui contient l'utilisateur, et du `$password` qui contient le mot de passe de la Bdd,
-   dans la config de connexion j'ai aussi ajouté => `$options = [PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING];`
+   - Dans le dossier **inc** créer un fichier de configuration d'accès à votre Base de donées.
+
+   ```php
+      // $dsn, $user, $password, $options(option)
+      // Cela est la config pour me connecter à la Bdd via l'objet PDO => https://www.php.net/manual/fr/book.pdo.php
+
+      $dsn = 'mysql:host=localhost; dbname=nom_base_de_données; charset=utf8';
+      $user = 'nom_utilisateur ou nom_Bdd'; // on donne souvent le même nom pour la Bdd et l'utilisateur.
+      $password = 'mot_de_passe ou vide';
+
+      // https://www.php.net/manual/en/pdo.setattribute.php
+      $options = [PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING];
+   ```
+
+   - Dans le fichier **`connexBdd_inc.php`** à la ligne 3
+
+   ```php 
+      require_once ROOTPATH . '/inc/configBdd_inc.php'; 
+   ```
+
+   Mettre à la place de `configBdd_inc.php` votre propre nom de fichier de config que vous aurez créé.
+  

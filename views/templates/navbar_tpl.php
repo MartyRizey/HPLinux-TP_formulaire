@@ -9,7 +9,7 @@
   // Dans un second temps créer les vues des formulaires et d'une page d'erreur type 404.
    
   require_once ROOTPATH . '/inc/pathDefine_inc.php';
-  // require_once __DIR__ . '/formConnexModal_vws.php';
+  require_once ROOTPATH . '/views/formConnexModal_vws.php';
   require_once ROOTPATH . '/views/formRegistrationModal_vws.php';
   require_once ROOTPATH . '/inc/logOutUserConnex_inc.php'; 
      

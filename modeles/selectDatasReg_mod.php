@@ -5,7 +5,7 @@
     fichier Ctrl_InsertDatasReg.php.
     C'est à dire la connection à la Bdd ($connectBdd) et le pseudo ($pseudo)à rechercher.
   */
-    function selectPseudo($connectBdd, $pseudo){
+  function selectPseudo($connectBdd, $pseudo){
     /*
      Je fais une requête de SELECTION en Bdd.
      Je selectionne la colonne pseudo dans la table users_registred dont la valeur et égal à $pseudo
