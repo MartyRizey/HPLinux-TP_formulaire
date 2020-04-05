@@ -57,7 +57,7 @@
         exit;
 
       } else {
-        header('Location: ../views/vws_404error.php');
+        header('Location: ../views/404error_vws.php');
         exit;
       }
 

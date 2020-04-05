@@ -73,15 +73,15 @@ if(isset($pseudo) && !empty($pseudo)){
         exit();
 
       } else {
-        header('Location: ../views/vws_404error.php');
+        header('Location: ../views/404error_vws.php');
       }
 
     } else {
-      header('Location: ../views/vws_404error.php');
+      header('Location: ../views/404error_vws.php');
     }
 
   }
 
 } else {
-  header('Location: ../views/vws_404error.php');
+  header('Location: ../views/404error_vws.php');
 }

@@ -20,7 +20,7 @@
   <div class="navBar_links">
     <ul>
       <li><a href=<?= ROOTPATH . '/public/index.php'; ?>>Home</a></li>
-      <li><a href="#">Link_2</a></li>
+      <li><a href=<?= ROOTPATH . '/views/adherentsList_vws.php'; ?>>Adhérents</a></li>
     </ul>
   </div>
 
@@ -45,7 +45,6 @@
       </li>
 
       <li>
-
         <!-- 
           https://www.php.net/manual/fr/control-structures.alternative-syntax.php 
           Ici si dans le tableau $_SESSION la clé 'pseudo' existe et si elle n'est pas vide alors j'affiche le bouton 'logOut'.
@@ -60,7 +59,6 @@
           </form>
 
         <?php endif; ?>   
-
       </li>
 
     </ul>

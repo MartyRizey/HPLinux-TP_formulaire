@@ -169,3 +169,37 @@ footer {
   margin-bottom: 20px;
 }
 
+/* -------- 404 error break -------- */
+#error_page-warning {
+  display: flex;
+  justify-content: center;
+}
+
+.error_page-warning_img {
+  padding: 0.5em;
+  width: 100px;
+}
+
+.error_page-warning_subTitle {
+  align-self: center;
+}
+
+.error_page-title {
+  text-align: center;
+  padding: 0.7em;
+  color: red;
+  text-shadow: 1px 1px 2px silver;
+}
+
+.error_page-img {
+  display: flex;
+  justify-content: center;
+}
+
+.error_page-cta_return {
+  padding: 0.5em;
+  border: solid 1px blue;
+  border-radius: 5px;
+  margin-left: 1em;
+}
+

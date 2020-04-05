@@ -25,10 +25,7 @@
                     ? '<h3 class="home_page-message">Pensez à vous inscrire si vous êtes un nouvel utilisateur.</h3>' 
                     : 'Bienvenu(e) dans votre session : ' . $_SESSION['pseudo'];
 
-            } else {
-
-                echo 'echec';
-            }
+            } 
 
         ?>    
     

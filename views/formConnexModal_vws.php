@@ -13,7 +13,7 @@
       <!-- Modal body -->
       <div class="modal-body">
       <!-- Je transmet les données saisies dans le fichier Ctrl_selectDatasForConnex.php -->
-        <form action="../Controllers/selectDatasForConnex_Ctrl.php" method="POST">
+        <form action="../Controllers/SelectDatasForConnex_Ctrl.php" method="POST">
 
           <!-- <input type="hidden" name="userId" value="" /> -->
 
