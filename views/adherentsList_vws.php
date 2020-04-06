@@ -7,9 +7,11 @@
 
 <h1>Liste des adhérents</h1>
 
-<table>
+<!-- Tableau pour afficher les données de la Bdd dans ma page web -> https://www.w3schools.com/css/css_table.asp -->
 
-  <thead id=table>
+<table id="table">
+
+  <thead>
     <tr>
       <th>Id</th>
       <th>Speudo</th>
@@ -21,10 +23,29 @@
   <tbody>
     <?php foreach($rows AS $adherentRow): ?>
       <tr>
+      <!-- 
+        On preferera la syntaxe "?= .... ?" dans du html, plutôt que '?php echo ... ?'         
+      -->
         <td><?= $adherentRow['id']; ?></td>
         <td><?= $adherentRow['pseudo']; ?></td>
         <td><?= $adherentRow['email']; ?></td>
         <td><?= $adherentRow['birthday']; ?></td>
+
+        <!-- 
+          Suppression d'entrées dans le tableau et la Bdd via des liens qui cibleront l'id. Les liens seront des 'cta' sur lesquels on mettra un style en CSS.
+        
+          La chaîne de requête après le '?' dans l'URL "?del_Id=<?= $reccDatasRow['id']; ?>" permet de passer l'id à supprimer comme valeur d'une 
+          variable 'del_Id' en GET donc dans l'URL... ATTENTION.
+          Si je voulais ouvrir mon lien vers une autre page j'utiliserais l'attribut de la balise <a> target="_blank" avec rel="noopener noreferrer". 
+          https://developer.mozilla.org/fr/docs/Web/HTML/Element/a
+        -->
+        <td>
+          <a 
+            href="../modeles/deleteAdherentList_mod.php?del_Id=<?= intval($adherentRow['id']); ?>" 
+            class="cta cta_delete" 
+            title="ATTENTION, Vous allez supprimer l'enregistrement n° <?= $adherentRow['id']; ?>">Suppr
+          </a>
+        </td>
       </tr>
     <?php endforeach; ?>
   </tbody>
