@@ -2,7 +2,7 @@
 
   /*
     Je récupére dans les paramètres de ma fonction les valeurs passées dans l'appel de cette fonction dans le
-    fichier Ctrl_InsertDatasReg.php.
+    fichier InsertDatasReg_Ctrl.php.
     C'est à dire la connection à la Bdd ($connectBdd) et le pseudo ($pseudo)à rechercher.
   */
   function selectPseudo($connectBdd, $pseudo){

@@ -20,7 +20,8 @@
   <div class="navBar_links">
     <ul>
       <li><a href=<?= ROOTPATH . '/public/index.php'; ?>>Home</a></li>
-      <li><a href=<?= ROOTPATH . '/views/adherentsList_vws.php'; ?>>Adhérents</a></li>
+      <!-- L'attribut avec sa valeur 'target='_blank' permet d'ouvrir le lien dans un nouvel onglet -->
+      <li><a href="../views/adherentsList_vws.php" target="_blank">Adhérents</a></li>      
     </ul>
   </div>
 
@@ -60,8 +61,8 @@
 
         <?php endif; ?>   
       </li>
-
     </ul>
+    
   </div>
 
 </nav>

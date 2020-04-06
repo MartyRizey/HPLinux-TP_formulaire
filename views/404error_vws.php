@@ -1,5 +1,5 @@
 <?php 
-  require_once __DIR__ . '/doctype_tpl.php'; 
+  require_once __DIR__ . '/templates/doctype_tpl.php'; 
 ?>
 
 <section id="error_page">
@@ -16,6 +16,6 @@
       <img src="../public/imgs/Peug404break.jpg" alt="Peugeot 404 break" />
     </div>
 
-    <p><a href="../index.php" class="error_page-cta_return"><- Retour</a></p>
+    <p><a href="../public/index.php" class="error_page-cta_return"><- Retour</a></p>
 
 </section>
