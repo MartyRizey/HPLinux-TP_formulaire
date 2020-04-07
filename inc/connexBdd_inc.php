@@ -1,5 +1,6 @@
 <?php
   
+  require_once __DIR__ . '/../inc/pathDefine_inc.php';
   require_once ROOTPATH . '/inc/configBdd_inc.php';
 
   // Connexion => https://www.php.net/manual/fr/pdo.construct.php

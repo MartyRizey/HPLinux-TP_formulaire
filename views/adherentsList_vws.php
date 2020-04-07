@@ -34,7 +34,7 @@
         <!-- 
           Suppression d'entrées dans le tableau et la Bdd via des liens qui cibleront l'id. Les liens seront des 'cta' sur lesquels on mettra un style en CSS.
         
-          La chaîne de requête après le '?' dans l'URL "?del_Id=<?= $reccDatasRow['id']; ?>" permet de passer l'id à supprimer comme valeur d'une 
+          La chaîne de requête après le '?' dans l'URL "?del_Id=<?= $adherentRow['id']; ?>" permet de passer l'id à supprimer comme valeur d'une 
           variable 'del_Id' en GET donc dans l'URL... ATTENTION.
           Si je voulais ouvrir mon lien vers une autre page j'utiliserais l'attribut de la balise <a> target="_blank" avec rel="noopener noreferrer". 
           https://developer.mozilla.org/fr/docs/Web/HTML/Element/a
@@ -44,6 +44,20 @@
             href="../modeles/deleteAdherentList_mod.php?del_Id=<?= intval($adherentRow['id']); ?>" 
             class="cta cta_delete" 
             title="ATTENTION, Vous allez supprimer l'enregistrement n° <?= $adherentRow['id']; ?>">Suppr
+          </a>
+        </td>
+
+        <!--
+          Modif d'entrées dans le tableau et la Bdd via des liens qui cibleront l'id. Les liens seront des 'cta' sur lesquels on mettra un style en CSS.
+
+          Ici je passe la valeur contenue dans intval($adherentRow['id']) dans l'URL via la chaîne de requête après le point d'interrogation. Elle sera
+          récupérée pour être utilisée dans le fichier UpdateAdherentDatas_Ctrl.php
+        -->
+        <td>
+          <a 
+            href="../Controllers/UpdateAdherentDatas_Ctrl.php?upd_Id=<?= intval($adherentRow['id']); ?>" 
+            class="cta cta_update" 
+            title="Vous allez modifier l'enregistrement n° <?= $adherentRow['id']; ?>">Modif
           </a>
         </td>
       </tr>
