@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  outline: none;
+  outline: none;  
 }
 
 :focus {
@@ -130,6 +130,91 @@ footer {
   border-radius: 0.5em;
   padding: 0.5em;
   text-shadow: 1px 1px 2px silver;
+}
+
+/* -------- adherentsList_vws.php -------- */
+#adherents_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10em;
+}
+
+.adherents_list-title {
+  margin: 0.3em 0 1em 0;
+  text-shadow: 2px 2px 2px silver;
+}
+
+.adherents_list-table {
+  text-align: center; 
+  border-bottom: 1px solid silver; 
+  margin-bottom: 2em;
+}
+
+.adherents_list-table > thead {
+  font-size: 1.2em;
+  border-bottom: 1px solid silver;
+}
+
+th {
+  padding: 0.7em;
+}
+
+.adherents_list-table th:nth-child(1) {
+  width: 6em;
+}
+
+.adherents_list-table th:nth-child(2) {
+  width: 15em;
+}
+
+.adherents_list-table th:nth-child(3),
+.adherents_list-table th:nth-child(4) {
+  width: 20em;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(246, 246, 246);
+}
+
+td {
+  padding: 0.5em 0.2em;
+}
+
+.link_cta-delete:hover,
+.link_cta-update:hover {
+  box-shadow: 1px 1px 1px black;
+}
+
+.link_cta-delete:hover {
+  color: red;
+  border: 1px solid red;
+}
+
+.link_cta-delete:active {
+  background-color: red;
+  color: white;
+}
+
+.link_cta-update:hover {
+  color: rgb(212, 181, 1);
+  border: 1px solid rgb(212, 181, 1);  
+}
+
+.link_cta-update:active {
+  background-color: rgb(212, 181, 1);
+  color: white;
+}
+
+.link_cta a {
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 0.1em 0.2em 0.2em 0.2em;
+}
+
+.cta-home {
+  margin-bottom: 2em;
 }
 
 /* -------- Modal Formulaire -------- */

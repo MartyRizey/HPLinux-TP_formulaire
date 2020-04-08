@@ -59,7 +59,7 @@ Dans un environnement classique PHP, Apache, MySQL, phpMyAdmin.
       $options = [PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING];
    ```
 
-   - Dans le fichier **`connexBdd_inc.php`** à la ligne 3
+   - Dans le fichier **connexBdd_inc.php** à la ligne 3
 
    ```php 
       require_once ROOTPATH . '/inc/configBdd_inc.php'; 
